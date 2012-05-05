@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping    PUBLIC "-//Hibernate/Hibernate Mapping DTD//EN"     "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<class name="org.courses.Person" table="Person">
+		<id column="id" name="id" type="java.lang.Integer">
+			<generator class="increment" />
+		</id>
+		<property name="Name" column="Name" type="java.lang.String" />
+		<property name="SName" column="SurName" type="java.lang.String" />
+		<property name="Age" column="Age" type="java.lang.Integer" />
+        <property name="fileName" column="ImageFileName" type="java.lang.String" />
+	</class>
+
+</hibernate-mapping>
